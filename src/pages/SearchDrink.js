@@ -16,7 +16,9 @@ const SearchDrink = () => {
     return (
         <Layout>
             <BtnBack/>
-            <ProductList drinks={drinks}/>
+            {drinks &&
+                <ProductList drinks={drinks}/>
+            }
         </Layout>
     );
 };
